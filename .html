@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleclasess.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SUNSHINE INSTITUTE</title>
+        <style>
+ div.scroll
+{
+Width-8px;
+Height-20 px;
+Overflow-x:scroll;
+}
+
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+
+{
+  background-image: url('img_girl.jpg');
+  font-weight:bold;
+  color:blue;
+  font-size:20px;
+  
+}
+
+body {
+	page-border: 2;
+ font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-color:white;
+}
+.marquee
+  {
+  color: blue;
+}
+
+h1 {
+  color: blue;
+}
+
+
+
+{
+	margin:0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	font-family: calibri;
+}
+a{
+	text-decoration:none;
+}
+.services{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.s-heading{
+	text-align:center;
+}
+.s-heading h1{
+	color:#576975;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0px;
+}
+.s-heading p{
+	color: rgba(87,105,117,0.60);
+	font-size: 1rem;
+	margin: 5px;
+	text-align: center;
+}
+.s-box-container{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s-box{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width:300px;
+	padding: 20px 25px;
+	height: 400px;
+	box-sizing: border-box;
+	margin: 30px;
+	position: relative;
+}
+.s-box img{
+	height: 75px;
+}
+.s-box h1{
+	color:#576975;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+	
+}
+.s-box p{
+	color: rgba(87,105,117,0.90);
+	text-align: center;
+}
+.s-btn{
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+	border:1px solid rgba(74,144,226,0.50);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#576975;
+	margin-top:10px; 
+}
+.bar{
+	width: 100px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%);
+	background-color:#4a90e2; 
+	border-radius: 0px 0px 10px 10px;
+	display: none;
+	animation: bar 0.5s;
+}
+.s-box:hover{
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
+	transition: all ease 0.3s;
+}
+.s-btn:hover{
+	background-color:#4a90e2;
+	border: 1px solid #4a90e2;
+	color:#FFFFFF;
+	transition: all ease 0.3s;
+}
+.s-box:hover .bar{
+	display: block;
+}
+@keyframes bar{
+	0%{
+		width:0px;
+	}
+	100%{
+		width:100px;
+	}
+}
+@media(max-width:1050px){
+	.s-box-container{
+		flex-wrap: wrap;
+		
+	}	
+	.services{
+		height: auto;
+	}
+	.s-heading{
+		margin: 15px;
+	}
+	.s-box{
+		flex-grow: 1;
+	}
+	.logo{
+     left:40px;
+     right:60px;
+     border:curve:
+     padding:10px:
+     
+}
+
+
+
+  }
+
+</style>
+    
+</head>
+<header id="home">
+   
+<body border="2">
+ <h1><marquee>ADMISSION IS GOING ON!!!!!!!!</marquee></h1>
+
+   
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="admission form.html">Admission Form</a></li> 
+                 <li><a href="registration.html">Sign up/login</a></li> 
+            </ul>
+        </nav>
+  	<center><img src="logo.jpeg.jpg"></center>
+    </header>
+
+
+    <section id="Home">
+
+<div class="main">
+		<div class="logo">
+			<center>  <img src="b.jpg" height=100% width=100%></center></div>
+	
+    <div>
+</section>
+  <section id="about">
+ <div class="about-section">
+  <h1>About Us </h1>
+    <p><b>"The Sunshine Institute where Success Get Easily"</p><br>
+<p>Sunshine has been guiding students to success since 2015. With a legacy of over 7 years, 50+ centers across India, 200+ expert faculty and 50k lakh+ happy students, Sunshine is well known for its comprehensive, result-oriented in secondary and Higher Secondary preparations . BYJU’S - India’s largest ed-tech company and a world leader in technology based learning solutions, now joins hands with Sunshine, to give you an unmatched learning experience with an unbeatable edge. With BYJU’S sharing our values and vision, we are excited to continue our efforts in improving our existing offering to students, by leveraging our strengths and delivering increased value and working in the direction of launching innovative products and courses. Our core objective continues to be to help you succeed and to bring you a learning experience that helps you achieve your academic goals.
+
+Sunshine Educational Services Limited (SESL) is a leading educational institution in India that provides comprehensive test preparatory services to students preparing for B.com and It entrance exams, school/board exams, KVPY, NTSE, Olympiads and other Foundation level exams.
+The first centre under ‘Sunshine’ was started in 2015 by Mr Pravin, offering coaching services for medical entrance examinations. Today, we are highly acknowledged for offering niche test preparatory services for IT as well a commerce sector entrance exams and foundation level exams through our distinct verticals namely, sunshine IT  and Sunshine Foundations. We have a pan-India network of 50+ Sunshine Centres and a Student Count of more than 50,000.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="shital.png"alt="Jane" style="width:20%">
+      <div class="container">
+        <h2>Shital Ma'am</h2>
+        <p class="title">MCA,BSc.IT</p>
+        <p>The experts in their focus of study or discipline, many of them work long hours and multitask to be an example of what makes a good professor. Teaching and grading students, which they are expected to be highly trained and skilled in, are just the tip of the iceberg. Should the job call for it, professors can perform tasks that run the gamut from overseeing the work of research teams to leading an entire department.
+
+Most—but not all—academic institutions require their college and university professors to be doctorate holders. As subject experts, professors who have spent years researching to obtain advanced-level knowledge and successfully reached the pinnacle of their educational journey have the upper hand when it comes to getting hired.</p>
+        <p>shitalmam@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+  <div class="column-row
+    <div class="card">
+      <img src="ganesh.jpg" alt="Mike" style="width:10%">
+      <div class="container">
+        <h2>Ganesh Sir</h2>
+        <p class="title">BSc.IT, MSc.IT</p>
+        <p>Clarity in basic concepts, good integrity, ethically sound, competency, passionate, no dereliction of duty, command over language, humble, a good researcher, full of resources, punctual, highly disciplined, having willingness to share his knowledge, and over.</p>
+        <p>ganeshsir@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="divya.jpg" alt="khan" style="width:10%">
+      <div class="container">
+        <h2>Divya Ma'am</h2>
+        <p class="title">BSc.IT, MSc.IT</p>
+        <p>I am Masters of Science in  having rich Experience in Quality Management and Data Analytics. Completed Six Sigma Yellow and Green belt. I am proficient in Quality Control, Six Sigma, Statistical Data Analysis, Data Handling, Minitab, Quality Assurance, Internal Audit and Microsoft Office.</p>
+        <p>divyamam@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<section id="services">
+
+	<!--heading---------------->
+	<div class="s-heading">
+	<h1>Ser<font color="#4a90e2">vic</font>es</h1>
+	<p>We Provide The Best In Class Servies For Our Students</p>
+	</div>
+	<!--services-box-container------------------->
+	<div class="s-box-container">
+	<!--service-box-1---------------->	
+	<div class="s-box">
+	<!--top-bar-------->
+	<div class="bar"></div>
+	<!--img---------->
+	<img alt="1" src="a.jpg" />
+	<!--servies-name---------->
+	<h1>class I to X </h1>
+	<!--details------>
+		<h4>FEES STRUCTURE</h4>
+		<p>I=₹299/month<br> II=₹349/month<br> III=₹399/month<br>IV=₹449/month<br>V=₹499/month<br>VI=₹549/month<br>VII=₹599/month<br>VIII=₹649/Month<br>IX=₹699/month<br><b>SSC=₹799/month<br></p>
+	
+	
+	</div>
+		<!--service-box-1---------------->	
+	<div class="s-box">
+	<!--top-bar-------->
+	<div class="bar"></div>
+	<!--img---------->
+	<img alt="2" src="11.jpg" />
+	<!--servies-name---------->
+	<h1>SCIENCE/COMMERCE/ARTS<center>(For 11th and 12th)</center></h1>
+	<!--details------>
+      <h4>FEES STRUCTURE</h4>
+		<p>Science=₹29,999/yearly<br>Commerce=₹24,999/yearly<br>Arts=₹9,999/yearly<br></p>
+	</div>
+		<!--service-box-3---------------->	
+	<div class="s-box">
+	<!--top-bar-------->
+	<div class="bar"></div>
+	<!--img---------->
+	<img alt="3" src="13.jpg">
+	<!--servies-name---------->
+	<h1>B.com(BAF,BMS,BMM)<br>B.sc(BSC.IT,Bsc.CS)<br>BA<br><center>(For Degree Courses)</center></h1>
+	<!--details------>
+	<h4>FEES STRUCTURE</h4>
+		<p>B.com=₹7,500/semister<br>B.sc=₹15,500/Semister<br>BA=₹4000/Semister<br></p>
+	
+	
+	</div>
+	</section>
+
+    </header>
+</body>
+
+</html>
